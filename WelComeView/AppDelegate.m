@@ -26,7 +26,7 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"FirstRun"]) {
-        //如果不是第一次运行就添加BOOL并赋值
+        //如果是第一次运行就添加BOOL并赋值
         [[NSUserDefaults standardUserDefaults] setBool:YES forKey:@"FirstRun"];
         //图片数据
         NSArray *images = @[@"0.jpg",@"1.jpg",@"2.jpg",@"3.jpg"];
